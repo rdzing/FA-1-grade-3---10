@@ -1,0 +1,82 @@
+[13:15:24] INFO     Loading OMRChecker modules...                 __init__.py:5
+[13:15:25] INFO     Loading processors from "src.processors"...   manager.py:53
+           INFO     Loaded processors: ['CropOnMarkers',          manager.py:76
+                    'CropPage', 'FeatureBasedAlignment',                       
+                    'GaussianBlur', 'Levels', 'MedianBlur']                    
+           INFO     Loading config.json: inputs\config.json   validations.py:84
+           INFO     Loading template.json:                    validations.py:49
+                    inputs\template.json                                       
+           INFO     Checking Directories...                          file.py:34
+           INFO     Checking Files...                                file.py:57
+           INFO     Present : appending to                           file.py:92
+                    'outputs\Results\Results_01PM.csv'                         
+           INFO     Present : appending to                           file.py:92
+                    'outputs\Manual\MultiMarkedFiles.csv'                      
+           INFO     Present : appending to                           file.py:92
+                    'outputs\Manual\ErrorFiles.csv'                            
+           INFO                                                     entry.py:48
+                            Current Configurations                             
+          +---------------------------------------------------------+          
+          | Directory Path          | inputs                        |          
+          | Count of Images         | 1                             |          
+          | Set Layout Mode         | OFF                           |          
+          | Markers Detection       | OFF                           |          
+          | Auto Alignment          | False                         |          
+          | Detected Template Path  | inputs\template.json          |          
+          | Detected Local Config   | inputs\config.json            |          
+          | Detected pre-processors | ['CropPage', 'CropOnMarkers'] |          
+          +---------------------------------------------------------+          
+           INFO     Saving Image to 'outputs\debug\WhatsApp Image   image.py:24
+                    2025-05-02 at 16.41.19 (1)_01_original.jpg'                
+           INFO                                                    entry.py:247
+           INFO     (1) Opening image:      'inputs\WhatsApp Image entry.py:248
+                    2025-05-02 at 16.41.19 (1).jpeg' Resolution:               
+                    (1280, 720)                                                
+           INFO     Showing 'edge'                            interaction.py:74
+                             Press Q on image to continue.                     
+                    Press Ctrl + C in terminal to exit                         
+[13:15:26] INFO     Found page corners:      [[1454, 1813], [0,  CropPage.py:70
+                    1828], [0, 382], [1431, 426]]                              
+[13:15:27] INFO     Matching Marker:  Quarter1: 0.312      CropOnMarkers.py:132
+                    Quarter2: 0.32  Quarter3: 0.436                            
+                    Quarter4: 0.441                                            
+           INFO     Optimal Scale: 0.64                    CropOnMarkers.py:133
+           INFO     Saving Image to 'outputs\debug\WhatsApp Image   image.py:24
+                    2025-05-02 at 16.41.19                                     
+                    (1)_02_1_after_CropPage.jpg'                               
+           INFO     Saving Image to 'outputs\debug\WhatsApp Image   image.py:24
+                    2025-05-02 at 16.41.19                                     
+                    (1)_02_2_after_CropOnMarkers.jpg'                          
+           INFO     Saving Image to 'outputs\debug\WhatsApp Image   image.py:24
+                    2025-05-02 at 16.41.19                                     
+                    (1)_02_template_layout.jpg'                                
+           INFO     Showing 'Template Layout: WhatsApp Image  interaction.py:74
+                    2025-05-02 at 16.41.19 (1).jpeg'                           
+                             Press Q on image to continue.                     
+                    Press Ctrl + C in terminal to exit                         
+[13:15:28] INFO     Thresholding:   global_thr: 71.78               core.py:248
+                    global_std_THR: 200                                        
+           INFO     Saving Image to 'outputs\CheckedOMRs\WhatsApp   image.py:24
+                    Image 2025-05-02 at 16.41.19 (1).jpeg'                     
+           INFO     Saving Image to 'outputs\debug\WhatsApp Image   image.py:24
+                    2025-05-02 at 16.41.19 (1)_03_final_marked.jpg'            
+           INFO     Read Response:                                 entry.py:333
+                    {'Apaar_ID': '370776307703', 'PART_D':                     
+                    '204241', 'Part_E': '353', 'Exam_code': '707',             
+                    'q11': 'D', 'q14': 'B', 'q15': 'D', 'q6': 'D',             
+                    'q7': 'B', 'q4': 'B', 'q2': 'B', 'q5': 'D',                
+                    'q8': 'D', 'q12': 'B', 'q9': 'B', 'q13': 'D',              
+                    'q10': 'D', 'q3': 'D', 'q1': 'D'}                          
+           INFO     (/1) Processed file: 'WhatsApp Image           entry.py:344
+                    2025-05-02 at 16.41.19 (1).jpeg'                           
+           INFO     Showing 'Final Marked Bubbles : 'WhatsApp interaction.py:74
+                    Image 2025-05-02 at 16.41.19 (1).jpeg''                    
+                             Press Q on image to continue.                     
+                    Press Ctrl + C in terminal to exit                         
+[13:15:29] INFO                                                    entry.py:410
+           INFO     Total file(s) moved        : 0                 entry.py:411
+           INFO     Total file(s) not moved    : 1                 entry.py:412
+           INFO     --------------------------------               entry.py:413
+           INFO     Total file(s) processed    : 1 (Sum Tallied!)  entry.py:414
+           INFO                                                    entry.py:429
+                    Total script time          : 4.09 seconds                  
